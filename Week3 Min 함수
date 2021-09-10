@@ -1,1 +1,10 @@
-
+import 'dart:io';
+void main() {
+	List listinputData = stdin.readLineSync().split(' ').map((e) => int.parse(e)).toList();
+	
+	if(listinputData[0]-listinputData[1] < 0) {
+		print(listinputData[0]);
+	} else {
+		print(listinputData[1]);
+	}
+}
